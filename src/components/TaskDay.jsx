@@ -16,11 +16,11 @@ const FormTakDay = styled.div`
   }
 `;
 
-export const TaskDay = () => {
+export const TaskDay = ({value, action}) => {
   return (
     <FormTakDay>
-      <input type="text" placeholder="type your task day" />
-      <button>Add Task</button>
+      <input type="text" placeholder="type your task day" value={value}/>
+      <button onClick={action}>Add Task</button>
     </FormTakDay>
   );
 };
